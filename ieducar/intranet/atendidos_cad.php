@@ -546,6 +546,7 @@ class indice extends clsCadastro
     $options            = array('label'       => 'Nacionalidade',
                                 'resources'   => $tiposNacionalidade,
                                 'inline'      => true,
+                                'required'    =>false,
                                 'value'       => $this->tipo_nacionalidade);
 
     $this->inputsHelper()->select('tipo_nacionalidade', $options);
@@ -573,7 +574,7 @@ class indice extends clsCadastro
 
     // naturalidade
 
-    $options       = array('label' => 'Naturalidade', 'required'   => false);
+    $options       = array('label' => 'Naturalidade', 'required'   => true);
 
     $helperOptions = array('objectName'         => 'naturalidade',
                            'hiddenInputOptions' => array('options' => array('value' => $this->naturalidade_id)));
