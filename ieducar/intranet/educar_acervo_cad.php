@@ -2,25 +2,25 @@
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 	*																	     *
-	*	@author Prefeitura Municipal de Itajaí								 *
+	*	@author Prefeitura Municipal de Itajaï¿½								 *
 	*	@updated 29/03/2007													 *
-	*   Pacote: i-PLB Software Público Livre e Brasileiro					 *
+	*   Pacote: i-PLB Software Pï¿½blico Livre e Brasileiro					 *
 	*																		 *
-	*	Copyright (C) 2006	PMI - Prefeitura Municipal de Itajaí			 *
+	*	Copyright (C) 2006	PMI - Prefeitura Municipal de Itajaï¿½			 *
 	*						ctima@itajai.sc.gov.br					    	 *
 	*																		 *
-	*	Este  programa  é  software livre, você pode redistribuí-lo e/ou	 *
-	*	modificá-lo sob os termos da Licença Pública Geral GNU, conforme	 *
-	*	publicada pela Free  Software  Foundation,  tanto  a versão 2 da	 *
-	*	Licença   como  (a  seu  critério)  qualquer  versão  mais  nova.	 *
+	*	Este  programa  ï¿½  software livre, vocï¿½ pode redistribuï¿½-lo e/ou	 *
+	*	modificï¿½-lo sob os termos da Licenï¿½a Pï¿½blica Geral GNU, conforme	 *
+	*	publicada pela Free  Software  Foundation,  tanto  a versï¿½o 2 da	 *
+	*	Licenï¿½a   como  (a  seu  critï¿½rio)  qualquer  versï¿½o  mais  nova.	 *
 	*																		 *
-	*	Este programa  é distribuído na expectativa de ser útil, mas SEM	 *
-	*	QUALQUER GARANTIA. Sem mesmo a garantia implícita de COMERCIALI-	 *
-	*	ZAÇÃO  ou  de ADEQUAÇÃO A QUALQUER PROPÓSITO EM PARTICULAR. Con-	 *
-	*	sulte  a  Licença  Pública  Geral  GNU para obter mais detalhes.	 *
+	*	Este programa  ï¿½ distribuï¿½do na expectativa de ser ï¿½til, mas SEM	 *
+	*	QUALQUER GARANTIA. Sem mesmo a garantia implï¿½cita de COMERCIALI-	 *
+	*	ZAï¿½ï¿½O  ou  de ADEQUAï¿½ï¿½O A QUALQUER PROPï¿½SITO EM PARTICULAR. Con-	 *
+	*	sulte  a  Licenï¿½a  Pï¿½blica  Geral  GNU para obter mais detalhes.	 *
 	*																		 *
-	*	Você  deve  ter  recebido uma cópia da Licença Pública Geral GNU	 *
-	*	junto  com  este  programa. Se não, escreva para a Free Software	 *
+	*	Vocï¿½  deve  ter  recebido uma cï¿½pia da Licenï¿½a Pï¿½blica Geral GNU	 *
+	*	junto  com  este  programa. Se nï¿½o, escreva para a Free Software	 *
 	*	Foundation,  Inc.,  59  Temple  Place,  Suite  330,  Boston,  MA	 *
 	*	02111-1307, USA.													 *
 	*																		 *
@@ -167,7 +167,7 @@ class indice extends clsCadastro
 
     $this->inputsHelper()->dynamic(array('instituicao', 'escola', 'biblioteca', 'bibliotecaTipoExemplar'));
 
-    // Obra referência
+    // Obra referï¿½ncia
 		$opcoes = array( "NULL" => "Selecione" );
 
 		if( $this->ref_cod_acervo && $this->ref_cod_acervo != "NULL")
@@ -182,7 +182,7 @@ class indice extends clsCadastro
 
 		$this->campoLista("ref_cod_acervo","Obra Refer&ecirc;ncia",$opcoes,$this->ref_cod_acervo,"",false,"","<img border=\"0\" onclick=\"pesquisa();\" id=\"ref_cod_acervo_lupa\" name=\"ref_cod_acervo_lupa\" src=\"imagens/lupa.png\"\/>",false,false);
 
-    // Coleção
+    // Coleï¿½ï¿½o
 		$opcoes = array( "" => "Selecione" );
 		if( class_exists( "clsPmieducarAcervoColecao" ) )
 		{
@@ -201,7 +201,7 @@ class indice extends clsCadastro
 			echo "<!--\nErro\nClasse clsPmieducarAcervoColecao nao encontrada\n-->";
 			$opcoes = array( "" => "Erro na geracao" );
 		}
-		$this->campoLista( "ref_cod_acervo_colecao", "Cole&ccedil;&atilde;o", $opcoes, $this->ref_cod_acervo_colecao,"",false,"","<img id='img_colecao' src='imagens/banco_imagens/escreve.gif' style='cursor:hand; cursor:pointer;' border='0' onclick=\"showExpansivelImprimir(500, 200,'educar_acervo_colecao_cad_pop.php',[], 'Coleção')\" />",false,false );
+		$this->campoLista( "ref_cod_acervo_colecao", "Cole&ccedil;&atilde;o", $opcoes, $this->ref_cod_acervo_colecao,"",false,"","<img id='img_colecao' src='imagens/banco_imagens/escreve.gif' style='cursor:hand; cursor:pointer;' border='0' onclick=\"showExpansivelImprimir(500, 200,'educar_acervo_colecao_cad_pop.php',[], 'Coleï¿½ï¿½o')\" />",false,false );
 
     // Idioma
 		$opcoes = array( "" => "Selecione" );
@@ -358,7 +358,7 @@ class indice extends clsCadastro
 		{
 			$qtd_autor = count($this->acervo_autor);
 		}
-		// não existe um autor principal nem autor
+		// nï¿½o existe um autor principal nem autor
 		if ( ($this->checked != 1) && ( !$qtd_autor || ($qtd_autor == 0) ) )
 		{
 //			die("1");
@@ -366,7 +366,7 @@ class indice extends clsCadastro
 
 		 	$this->campoCheck( "principal", "&nbsp;&nbsp;<img id='img_autor' src='imagens/banco_imagens/escreve.gif' style='cursor:hand; cursor:pointer;' border='0' onclick=\"showExpansivelImprimir(500, 250,'educar_acervo_autor_cad_pop.php',[], 'Autor')\" />", $this->principal,"<a href='#' onclick=\"getElementById('incluir_autor').value = 'S'; getElementById('tipoacao').value = ''; {$this->__nome}.submit();\"><img src='imagens/nvp_bot_adiciona.gif' title='Incluir' border=0></a>" );
 		}
-		// não existe um autor principal, mas existe um autor
+		// nï¿½o existe um autor principal, mas existe um autor
 		else if ( ($this->checked != 1) && ($qtd_autor > 0) )
 		{
 			$this->campoLista( "ref_cod_acervo_autor", "Autor", $opcoes, $this->ref_cod_acervo_autor,null,true,null, null,null,false);
@@ -395,7 +395,7 @@ class indice extends clsCadastro
 		$this->campoNumero( "num_edicao", "N&uacute;mero Edic&atilde;o", $this->num_edicao, 20, 255, true );
 		$this->campoNumero( "ano", "Ano", $this->ano, 5, 4, true );
 		$this->campoNumero( "num_paginas", "N&uacute;mero P&aacute;ginas", $this->num_paginas, 5, 255, true );
-		$this->campoNumero( "isbn", "ISBN", $this->isbn, 20, 13, true );
+		$this->campoNumero( "isbn", "ISBN", $this->isbn, 20, 13, false );
 	}
 
 	function Novo()
@@ -438,7 +438,7 @@ class indice extends clsCadastro
 			echo "<!--\nErro ao cadastrar clsPmieducarAcervo\nvalores obrigatorios\nis_numeric( $this->ref_cod_exemplar_tipo ) && is_numeric( $this->ref_usuario_cad ) && is_numeric( $this->ref_cod_acervo_colecao ) && is_numeric( $this->ref_cod_acervo_idioma ) && is_numeric( $this->ref_cod_acervo_editora ) && is_string( $this->titulo ) && is_numeric( $this->volume ) && is_numeric( $this->num_edicao ) && is_numeric( $this->ano ) && is_numeric( $this->num_paginas ) && is_numeric( $this->isbn )\n-->";
 			return false;
 		}
-		echo "<script> alert('É necessário adicionar pelo menos 1 Autor') </script>";
+		echo "<script> alert('ï¿½ necessï¿½rio adicionar pelo menos 1 Autor') </script>";
 		$this->mensagem = "Cadastro n&atilde;o realizado.<br>";
 		return false;
 	}
@@ -490,7 +490,7 @@ class indice extends clsCadastro
 			echo "<!--\nErro ao editar clsPmieducarAcervo\nvalores obrigatorios\nif( is_numeric( $this->cod_acervo ) && is_numeric( $this->ref_usuario_exc ) )\n-->";
 			return false;
 		}
-		echo "<script> alert('É necessário adicionar pelo menos 1 Autor') </script>";
+		echo "<script> alert('ï¿½ necessï¿½rio adicionar pelo menos 1 Autor') </script>";
 		$this->mensagem = "Edi&ccedil;&atilde;o n&atilde;o realizada.<br>";
 		return false;
 	}
@@ -571,7 +571,7 @@ function getColecao( xml_acervo_colecao )
 	if(DOM_array.length)
 	{
 		campoColecao.length = 1;
-		campoColecao.options[0].text = 'Selecione uma coleção';
+		campoColecao.options[0].text = 'Selecione uma coleï¿½ï¿½o';
 		campoColecao.disabled = false;
 
 		for( var i=0; i<DOM_array.length; i++)
@@ -591,7 +591,7 @@ function getColecao( xml_acervo_colecao )
 		}
 		else
 		{
-			campoColecao.options[0].text = 'A biblioteca não possui coleções';
+			campoColecao.options[0].text = 'A biblioteca nï¿½o possui coleï¿½ï¿½es';
 			setVisibility(document.getElementById('img_colecao'), true);
 		}
 	}
@@ -625,7 +625,7 @@ function getEditora( xml_acervo_editora )
 		}
 		else
 		{
-			campoEditora.options[0].text = 'A biblioteca não possui editoras';
+			campoEditora.options[0].text = 'A biblioteca nï¿½o possui editoras';
 			setVisibility(document.getElementById('img_editora'), true);
 		}
 	}
@@ -659,7 +659,7 @@ function getIdioma( xml_acervo_idioma )
 		}
 		else
 		{
-			campoIdioma.options[0].text = 'A biblioteca não possui idiomas';
+			campoIdioma.options[0].text = 'A biblioteca nï¿½o possui idiomas';
 			setVisibility(document.getElementById('img_idioma'), true);
 		}
 	}
@@ -687,7 +687,7 @@ function ajaxBiblioteca(acao)
 	}
 	campoColecao.length = 1;
 	campoColecao.disabled = true;
-	campoColecao.options[0].text = 'Carregando coleções';
+	campoColecao.options[0].text = 'Carregando coleï¿½ï¿½es';
 
 	var xml_colecao = new ajax( getColecao );
 	xml_colecao.envia( "educar_colecao_xml.php?bib="+campoBiblioteca );
