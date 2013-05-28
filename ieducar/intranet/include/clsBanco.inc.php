@@ -28,7 +28,7 @@
  * @version   $Id$
  */
 
-require_once '../includes/bootstrap.php';
+require_once 'includes/bootstrap.php';
 require_once 'include/clsBancoPgSql.inc.php';
 
 /**

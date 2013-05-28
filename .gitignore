@@ -1,2 +1,5 @@
+.gitignore
 ieducar/configuration/*.ini
 *~
+nbproject/private/
+nbproject

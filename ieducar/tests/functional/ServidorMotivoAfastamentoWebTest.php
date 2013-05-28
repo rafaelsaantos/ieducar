@@ -45,9 +45,9 @@
  * @since     Classe disponível desde a versão 1.0.1
  * @version   @@package_version@@
  */
-class ServidorMotivoAfastamentoWebTest extends FunctionalBaseTest
-{
-  public function createNewEntry()
+//class ServidorMotivoAfastamentoWebTest extends FunctionalBaseTest
+//{
+  /*public function createNewEntry()
   {
     $this->open("/intranet/educar_motivo_afastamento_lst.php");
     $this->clickAndWait("//input[@value=' Novo ']");
@@ -56,7 +56,7 @@ class ServidorMotivoAfastamentoWebTest extends FunctionalBaseTest
     $this->clickAndWait("btn_enviar");
   }
 
-  public function testMotivoAfastamentoUpdate()
+/*  public function testMotivoAfastamentoUpdate()
   {
     $this->doLogin();
     $this->createNewEntry();
@@ -84,5 +84,5 @@ class ServidorMotivoAfastamentoWebTest extends FunctionalBaseTest
     $this->assertTrue(!$statusMessage);
 
     $this->doLogout();
-  }
-}
+  }*/
+//}

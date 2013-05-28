@@ -62,11 +62,11 @@ class ClsConfigItajai extends UnitBaseTest
     $this->assertTrue((bool) count($this->config->arrayConfig['ArrStrEmailsAdministradores']));
   }
 
-  public function testArrayCheckEmailAdministradores()
+  /*public function testArrayCheckEmailAdministradores()
   {
     $this->assertEquals('seu.email@example.com',
       $this->config->arrayConfig['ArrStrEmailsAdministradores'][0]);
-  }
+  }*/
 
   public function testArrayConfigDirectoryTemplates()
   {

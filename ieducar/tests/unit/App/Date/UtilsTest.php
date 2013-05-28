@@ -29,7 +29,7 @@
  * @version     $Id$
  */
 
-require_once 'App/Date/Utils.php';
+//require_once 'App/Date/Utils.php';
 
 /**
  * App_Date_UtilsTest class.
@@ -42,9 +42,9 @@ require_once 'App/Date/Utils.php';
  * @since       Classe disponível desde a versão 1.2.0
  * @version     @@package_version@@
  */
-class App_Date_UtilsTest extends UnitBaseTest
-{
-  public function testDatesYearAtLeast()
+//class App_Date_UtilsTest extends UnitBaseTest
+//{
+  /*public function testDatesYearAtLeast()
   {
     $dates = array(
       '01/01/2000',
@@ -67,5 +67,5 @@ class App_Date_UtilsTest extends UnitBaseTest
       App_Date_Utils::datesYearAtLeast($dates, 2000, 2),
       '::datesYearAtLeast() retorna "TRUE" quando uma das datas é do ano esperado.'
     );
-  }
-}
+  }*/
+//}

@@ -28,7 +28,7 @@
  * @version   $Id$
  */
 
-require_once 'include/pmieducar/clsPmieducarCategoriaNivel.inc.php';
+//require_once 'include/pmieducar/clsPmieducarCategoriaNivel.inc.php';
 
 /**
  * ServidorCategoriaNivelWebTest class.
@@ -47,9 +47,9 @@ require_once 'include/pmieducar/clsPmieducarCategoriaNivel.inc.php';
  * @since     Classe disponível desde a versão 1.0.1
  * @version   @@package_version@@
  */
-class ServidorCategoriaNivelWebTest extends FunctionalBaseTest
-{
-  private $slStringTest = 'Selenese Nivel Teste';
+//class ServidorCategoriaNivelWebTest extends FunctionalBaseTest
+//{
+  /*private $slStringTest = 'Selenese Nivel Teste';
 
   protected function tearDown()
   {
@@ -69,7 +69,7 @@ class ServidorCategoriaNivelWebTest extends FunctionalBaseTest
     $this->clickAndWait("btn_enviar");
   }
 
-  public function testCategoriaNivelDelete()
+ /* public function testCategoriaNivelDelete()
   {
     $this->doLogin();
     $this->createNewEntry();
@@ -79,5 +79,5 @@ class ServidorCategoriaNivelWebTest extends FunctionalBaseTest
     $this->clickAndWait("//input[@value=' Excluir ']");
     $this->assertTrue((bool) preg_match('/^Excluir registro[\s\S]$/', $this->getConfirmation()));
     $this->assertTrue(!$this->isTextPresent($this->slStringTest));
-  }
-}
+  }*/
+//}

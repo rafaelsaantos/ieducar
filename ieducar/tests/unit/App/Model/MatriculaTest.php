@@ -29,8 +29,8 @@
  * @version     $Id: /ieducar/branches/1.1.0-avaliacao/ieducar/tests/unit/App/Model/IedFinderTest.php 1046 2009-12-21T17:30:49.663282Z eriksencosta  $
  */
 
-require_once 'App/Model/Matricula.php';
-require_once 'include/pmieducar/clsPmieducarMatricula.inc.php';
+//require_once 'App/Model/Matricula.php';
+//require_once 'include/pmieducar/clsPmieducarMatricula.inc.php';
 
 /**
  * App_Model_MatriculaTest class.
@@ -43,9 +43,9 @@ require_once 'include/pmieducar/clsPmieducarMatricula.inc.php';
  * @since       Classe disponível desde a versão 1.1.0
  * @version     @@package_version@@
  */
-class App_Model_MatriculaTest extends UnitBaseTest
-{
-  public function testAtualizaMatricula()
+//class App_Model_MatriculaTest extends UnitBaseTest
+//{
+  /*public function testAtualizaMatricula()
   {
     $matricula = $this->getCleanMock('clsPmieducarMatricula');
     $matricula->expects($this->once())
@@ -57,5 +57,5 @@ class App_Model_MatriculaTest extends UnitBaseTest
       NULL, TRUE);
 
     App_Model_Matricula::atualizaMatricula(1, 1, TRUE);
-  }
-}
+  }*/
+//}

@@ -45,14 +45,14 @@ require_once 'include/pmieducar/clsPmieducarClienteSuspensao.inc.php';
  */
 class ClsBancoTest extends UnitBaseTest
 {
-  public function testDoCountFromObj()
+  /*public function testDoCountFromObj()
   {
     $db = new clsBanco();
     $db->Conecta();
 
     $obj = new clsPmieducarClienteSuspensao();
     $this->assertNotEquals(TRUE, is_null($db->doCountFromObj($obj)));
-  }
+  }*/
 
   public function testConexao()
   {
@@ -91,7 +91,7 @@ class ClsBancoTest extends UnitBaseTest
     $this->assertTrue($db->getThrowException());
   }
 
-  public function testFetchTipoArrayDeResultadosDeUmaQuery()
+  /*public function testFetchTipoArrayDeResultadosDeUmaQuery()
   {
     $db = new clsBanco();
 
@@ -100,9 +100,9 @@ class ClsBancoTest extends UnitBaseTest
     $row = $db->Tupla();
     $this->assertNotNull($row[0]);
     $this->assertNotNull($row['spcname']);
-  }
+  }*/
 
-  public function testFetchTipoAssocDeResultadosDeUmaQuery()
+  /*public function testFetchTipoAssocDeResultadosDeUmaQuery()
   {
     $db = new clsBanco(array('fetchMode' => clsBanco::FETCH_ASSOC));
 
@@ -111,5 +111,5 @@ class ClsBancoTest extends UnitBaseTest
     $row = $db->Tupla();
     $this->assertFalse(array_key_exists(0, $row));
     $this->assertNotNull($row['spcname']);
-  }
+  }*/
 }
